@@ -58,7 +58,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: 'favicon.ico', to: 'dist' },
+        { from: 'favicon.ico' },
       ],
     }),
     new MiniCssExtractPlugin(),
