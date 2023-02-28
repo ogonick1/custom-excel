@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'eslint-config-airbnb',
   ],
+  parser: '@babel/eslint-parser',
   overrides: [
   ],
   parserOptions: {
@@ -13,6 +14,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'no-return-assign': 'off',
+    'no-use-before-define': 'off',
+    'no-console': 'off',
     'no-unused-vars': 'warn',
     'no-underscore-dangle': 'off',
     'no-param-reassign': 'off',
@@ -21,5 +25,6 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
+    'class-methods-use-this': 'off',
   },
 };
