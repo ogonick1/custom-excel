@@ -52,6 +52,10 @@ class Dom {
   findAll(selector) {
     return this.$el.querySelectorAll(selector);
   }
+
+  css(styles = {}) {
+    return Object.keys(styles).forEach((key) => this.$el.style[key] = styles[key]);
+  }
 }
 // event.target
 export function $(selector) {

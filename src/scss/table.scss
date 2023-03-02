@@ -72,8 +72,9 @@
     opacity: 0;
     background: $primary-color;
     bottom: 0;
+    z-index: 3;
     &:hover {
-      opacity: 1;
+      opacity: 1!important;
     }
   }
   .col-resize {
