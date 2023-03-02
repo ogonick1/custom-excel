@@ -21,8 +21,8 @@ function toColumn(col, index) {
 function toRow(index, content) {
   const resize = index ? '<div class="row-resize" data-resize="row"></div>' : '';
   return `
-    <div class="row">
-      <div class="row-info" data-type="resizes">
+    <div class="row" data-type="resizes">
+      <div class="row-info">
       ${index || ''}
       ${resize}
       </div>
